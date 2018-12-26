@@ -7,7 +7,6 @@
             "type": "amazon-ebs",
             "source_ami_filter": {
               "filters": {
-                "virtualization-type": "hvm",
                 "name": "RHEL-7.5_HVM_GA*",
                 "root-device-type": "ebs"
               },
