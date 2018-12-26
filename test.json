@@ -7,8 +7,7 @@
             "type": "amazon-ebs",
             "source_ami_filter": {
               "filters": {
-                "name": "RHEL-7.5_HVM_GA*",
-                "root-device-type": "ebs"
+                "name": "RHEL-7.5_HVM_GA*"
               },
               "owners": ["099720109477"],
               "most_recent": true
