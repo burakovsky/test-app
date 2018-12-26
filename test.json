@@ -1,4 +1,4 @@
-{
+{  
     "builders": [
         {
             "ami_name": "packer-linux-aws-redhat-{{timestamp}}",
@@ -7,9 +7,11 @@
             "type": "amazon-ebs",
             "source_ami_filter": {
               "filters": {
-                "name": "RHEL-7.5_HVM_GA*"
+                "virtualization-type": "hvm",
+                "name": "RHEL-7.5_HVM_GA*",
+                "root-device-type": "ebs"
               },
-              "owners": ["099720109477"],
+              "owners": ["099720109477", "309956199498"],
               "most_recent": true
             },
             "ssh_username": "ec2-user"
