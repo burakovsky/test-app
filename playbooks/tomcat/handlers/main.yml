@@ -1,0 +1,11 @@
+- name: systemd reload
+  systemd:
+    daemon_reload: yes
+  become: yes
+
+- name: restart tomcat
+  service:
+    name: tomcat
+    state: restarted
+  become: yes
+  become_user: "{{ tomcat_user }}"

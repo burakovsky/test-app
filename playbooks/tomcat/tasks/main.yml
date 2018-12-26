@@ -1,0 +1,75 @@
+- name: Make sure java is installed
+  yum: 
+    name: '{{ java_version }}'
+    state: present
+
+- name: Make sure tomcat group is created
+  group: 
+    name: "{{ tomcat_group }}"
+
+- name: Make sure tomcat user is created
+  user:
+    name: "{{ tomcat_user }}"
+    group: "{{ tomcat_group }}"
+    home: /opt/tomcat
+    system: yes
+
+- name: Make sure tomcat is downloaded and unarchived 
+  unarchive:
+    src: "{{ tomcat_url }}" 
+    dest: /opt/tomcat
+    owner: "{{ tomcat_user }}" 
+    group: "{{ tomcat_group }}"
+    creates: /opt/tomcat/apache-tomcat-{{ tomcat_version }}/
+    remote_src: yes 
+  become_user: "{{ tomcat_user }}"
+
+- name: Rename tomcat folder
+  shell: mv /opt/tomcat/apache-tomcat-{{ tomcat_version }} /opt/tomcat/{{ tomcat_version }}
+  args: 
+    creates: /opt/tomcat/{{ tomcat_version }}
+  become_user: "{{ tomcat_user }}"
+
+- name: Make sure tomcat 'current' symlink is created
+  file: 
+    src: /opt/tomcat/{{ tomcat_version }}
+    dest: "{{ tomcat_home }}"
+    state: link
+    force: yes
+  become_user: "{{ tomcat_user }}"
+  notify:
+    - restart tomcat
+
+- name: Make sure tomcat systemd script is configured
+  template: 
+    src: tomcat-systemd.j2
+    dest: /etc/systemd/system/tomcat.service
+    mode: 0755 
+  notify:
+    - systemd reload   
+    - restart tomcat
+
+- name: Make sure tomcat-users.xml is configured
+  template: 
+    src: tomcat-users.j2
+    dest: /opt/tomcat/{{ tomcat_version }}/conf/tomcat-users.xml
+    owner: "{{ tomcat_user }}"
+    group: "{{ tomcat_group }}"
+    mode: 0755
+  become_user: "{{ tomcat_user }}" 
+  notify: restart tomcat
+
+- name: Make sure Tomcat context.xml is configured
+  template: 
+    src: context.j2
+    dest: /opt/tomcat/{{ tomcat_version }}//webapps/manager/META-INF/context.xml 
+    owner: "{{ tomcat_user }}"
+    group: "{{ tomcat_group }}"
+    mode: 0755 
+  become_user: "{{ tomcat_user }}" 
+  notify: restart tomcat
+
+- name: Make sure Tomcat is running
+  systemd:
+    state: started
+    name: tomcat

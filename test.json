@@ -1,29 +1,26 @@
 {
-    "variables": {
-        "region":         "us-east-1"
-    },
     "builders": [
         {
-            "ami_name": "packer-linux-aws-demo-{{timestamp}}",
+            "ami_name": "packer-linux-aws-redhat-{{timestamp}}",
             "instance_type": "t2.micro",
             "region": "us-east-1",
             "type": "amazon-ebs",
             "source_ami_filter": {
               "filters": {
-              "virtualization-type": "hvm",
-              "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
-              "root-device-type": "ebs"
+                "virtualization-type": "hvm",
+                "name": "RHEL-7.5_HVM_GA*",
+                "root-device-type": "ebs"
               },
               "owners": ["099720109477"],
               "most_recent": true
             },
-            "ssh_username": "ubuntu"
+            "ssh_username": "ec2-user"
         }
     ],
     "provisioners": [
         {
-          "type": "shell",
-          "script": "./scripts/hello.sh"
+          "type": "ansible",
+          "playbook_file": "./playbooks/site.yml"
         }
     ]
 }
