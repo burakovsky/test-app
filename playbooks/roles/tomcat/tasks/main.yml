@@ -20,7 +20,7 @@
     dest: /opt/tomcat
     owner: "{{ tomcat_user }}" 
     group: "{{ tomcat_group }}"
-    creates: /opt/tomcat/apache-tomcat-{{ tomcat_version }}/
+    creates: /opt/tomcat/{{ tomcat_version }}
     remote_src: yes 
   become_user: "{{ tomcat_user }}"
 
@@ -72,4 +72,5 @@
   systemd:
     state: started
     name: tomcat
-  become_user: "{{ tomcat_user }}"
+    enabled: yes
+
