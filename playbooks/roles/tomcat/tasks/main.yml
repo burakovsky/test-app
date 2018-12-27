@@ -72,3 +72,4 @@
   systemd:
     state: started
     name: tomcat
+  become_user: "{{ tomcat_user }}"
