@@ -1,0 +1,34 @@
+{
+    "builders": [
+        {
+            "ami_name": "packer-linux-aws-app-{{timestamp}}",
+            "instance_type": "t2.micro",
+            "region": "us-east-1",
+            "type": "amazon-ebs",
+            "source_ami_filter": {
+              "filters": {
+                "virtualization-type": "hvm",
+                "name": "packer-linux-aws-redhat-*",
+                "root-device-type": "ebs"
+              },
+              "owners": ["099720109477", "309956199498", "965407989552"],
+              "most_recent": true
+            },
+            "ssh_username": "ec2-user"
+        }
+    ],
+    "provisioners": [
+        {
+          "type": "file",
+          "source": "./dist/hello-world.war",
+          "destination": "/tmp/"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "sudo cp /tmp/hello-world.war /opt/tomcat/current/webapps/",
+        "sudo chown -R tomcat:tomcat /opt/tomcat"
+      ]
+    }
+    ]
+}
