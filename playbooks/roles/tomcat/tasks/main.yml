@@ -46,8 +46,7 @@
     dest: /etc/systemd/system/tomcat.service
     mode: 0755 
   notify:
-    - systemd reload   
-    - restart tomcat
+    - systemd reload
 
 - name: Make sure tomcat-users.xml is configured
   template: 
