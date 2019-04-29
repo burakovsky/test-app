@@ -1,15 +1,9 @@
 Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-FirstTest,Chrome 73.0.3683.103,,2019-04-24 09:26:14,2019-04-24 09:26:53,38.483s,FAILED
+tutby2,Chrome 73.0.3683.103,,2019-04-23 11:57:54,2019-04-23 12:13:28,15m - 33.763s,FAILED
 ,,,,,,
-Test Cases/ExecuteAutomationTC,Chrome 73.0.3683.103,,2019-04-24 09:26:15,2019-04-24 09:26:52,37.944s,FAILED
-"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-24 09:26:15,2019-04-24 09:26:17,2.413s,PASSED
-"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-24 09:26:17,2019-04-24 09:26:18,0.523s,PASSED
-"navigateToUrl(""http://executeautomation.com/demosite/Login.html"")",Chrome 73.0.3683.103,,2019-04-24 09:26:18,2019-04-24 09:26:20,2.520s,PASSED
-"setText(findTestObject(""EAOR/Page_Execute Automation/input_UserName""), ""admin"")",Chrome 73.0.3683.103,,2019-04-24 09:26:20,2019-04-24 09:26:20,0.169s,PASSED
-"setText(findTestObject(""EAOR/Page_Execute Automation/input_Password""), ""admin"")",Chrome 73.0.3683.103,,2019-04-24 09:26:20,2019-04-24 09:26:21,0.113s,PASSED
-"click(findTestObject(""EAOR/Page_Execute Automation/input_Login""))",Chrome 73.0.3683.103,,2019-04-24 09:26:21,2019-04-24 09:26:21,0.294s,PASSED
-"selectOptionByValue(findTestObject(""EAOR/Page_Execute Automation/select_SelectMr.Ms.""), ""1"", true)",Chrome 73.0.3683.103,,2019-04-24 09:26:21,2019-04-24 09:26:21,0.204s,PASSED
-"setText(findTestObject(""EAOR/Page_Execute Automation/input_Initial""), ""KK"")",Chrome 73.0.3683.103,,2019-04-24 09:26:21,2019-04-24 09:26:21,0.130s,PASSED
-"setText(findTestObject(""EAOR/Page_Execute Automation/input_FirstName""), ""Karthik"")",Chrome 73.0.3683.103,,2019-04-24 09:26:21,2019-04-24 09:26:21,0.155s,PASSED
-"click(findTestObject(""EAOR/Page_Execute Automation/input_Hindi""))",Chrome 73.0.3683.103,,2019-04-24 09:26:21,2019-04-24 09:26:21,0.079s,PASSED
-"doubleClick(findTestObject(""EAOR/Page_Execute Automation/input_Save""))",Chrome 73.0.3683.103,,2019-04-24 09:26:21,2019-04-24 09:26:52,30.981s,FAILED
+Test Cases/tutby2TC,Chrome 73.0.3683.103,,2019-04-23 11:57:54,2019-04-23 12:13:26,15m - 32.139s,FAILED
+"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-23 11:57:55,2019-04-23 11:58:00,4.612s,PASSED
+"navigateToUrl(""https://www.tut.by/?crnd=78447"")",Chrome 73.0.3683.103,,2019-04-23 11:58:00,2019-04-23 11:58:09,9.045s,PASSED
+"click(findTestObject(""Object Repository/tutby/Page_  TUTBY/span_ 23""))",Chrome 73.0.3683.103,,2019-04-23 11:58:09,2019-04-23 12:00:12,2m - 3.184s,PASSED
+"click(findTestObject(""Object Repository/tutby/Page_ 23/a_""))",Chrome 73.0.3683.103,,2019-04-23 12:00:12,2019-04-23 12:01:57,1m - 45.130s,PASSED
+"click(findTestObject(""Object Repository/tutby/Page_    - TUTBY/span_""))",Chrome 73.0.3683.103,,2019-04-23 12:01:57,2019-04-23 12:13:26,11m - 29.530s,FAILED

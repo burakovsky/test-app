@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>FirstTest</name>
+   <name>tutby2</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,11 +9,11 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>87ff6728-9681-4f0f-9dd1-32a7a74c2984</testSuiteGuid>
+   <testSuiteGuid>75edaf54-bba1-428a-a413-11beaae854ef</testSuiteGuid>
    <testCaseLink>
-      <guid>3f855081-468c-4b2c-a966-6ffbe21008e8</guid>
+      <guid>193fa6bf-2650-4e12-a264-9901f507065d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ExecuteAutomationTC</testCaseId>
+      <testCaseId>Test Cases/tutby2TC</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
