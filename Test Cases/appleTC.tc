@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>tutby2TC</name>
+   <name>appleTC</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c91ea160-f5a2-43b0-9152-1d563cb64644</testCaseGuid>
+   <testCaseGuid>ddaea011-fa01-4907-833f-ac1d788a908f</testCaseGuid>
 </TestCaseEntity>

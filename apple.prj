@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>tutby2</name>
+   <name>apple</name>
    <tag></tag>
-   <UUID>d86c4a27-6103-49c4-9c02-f105790279cd</UUID>
+   <UUID>02a597c8-c9fb-4a12-a31b-9838bb65f7d6</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <sourceContent>

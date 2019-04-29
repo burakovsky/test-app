@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_ 23</name>
+   <name>a_iPhone</name>
    <tag></tag>
-   <elementGuidId>a538e498-fd02-4d31-a34a-974141118da5</elementGuidId>
+   <elementGuidId>b28da401-a0f9-445d-95ae-20e5a1f38a21</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='title_news_block']/div[2]/div[2]/div/div/a/span/span</value>
+         <value>//nav[@id='ac-globalnav']/div/ul[2]/li[4]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,63 +17,86 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>a</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>entry-head _title</value>
+      <value>ac-gn-link ac-gn-link-iphone</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/iphone/</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-analytics-title</name>
+      <type>Main</type>
+      <value>iphone</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-focus-method</name>
+      <type>Main</type>
+      <value>mouse</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>На торгах 23 апреля рубль снова окреп ко всем валютам</value>
+      <value>
+						iPhone
+					</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;title_news_block&quot;)/div[@class=&quot;b-topnews&quot;]/div[@class=&quot;b-newsfeed&quot;]/div[@class=&quot;news-section&quot;]/div[@class=&quot;news-entry small time ni x&quot;]/a[@class=&quot;entry__link io-block-link&quot;]/span[@class=&quot;entry-cnt&quot;]/span[@class=&quot;entry-head _title&quot;]</value>
+      <value>id(&quot;ac-globalnav&quot;)/div[@class=&quot;ac-gn-content&quot;]/ul[@class=&quot;ac-gn-list&quot;]/li[@class=&quot;ac-gn-item ac-gn-item-menu ac-gn-iphone&quot;]/a[@class=&quot;ac-gn-link ac-gn-link-iphone&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='title_news_block']/div[2]/div[2]/div/div/a/span/span</value>
+      <value>//nav[@id='ac-globalnav']/div/ul[2]/li[4]/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='«Белнефтехим»: Загрязненная российская нефть начала поступать в ЕС и Украину'])[1]/following::span[13]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='iPad'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Авто'])[2]/following::span[21]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mac'])[1]/following::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Замгендиректору «Белшины» вынесли приговор за взятки и мошенничество'])[1]/preceding::span[6]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Watch'])[1]/preceding::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='«Доморацкий не мог на меня повлиять». Свидетели рассказывают, как вел дела экс-замглавы Минска'])[1]/preceding::span[13]</value>
+      <name>xpath:href</name>
+      <value>//a[contains(@href, '/iphone/')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//div[2]/div/div/a/span/span</value>
+      <value>//li[4]/a</value>
    </webElementXpaths>
 </WebElementEntity>

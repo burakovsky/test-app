@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_</name>
+   <name>span_Buy</name>
    <tag></tag>
-   <elementGuidId>540c242a-60e1-4a7f-bb1b-bd7e89d7019e</elementGuidId>
+   <elementGuidId>95f3a79a-6e37-438e-83d1-077baa3cb50a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='content-band']/div[2]/div/div/div[2]/div[2]/a[2]/span/span</value>
+         <value>//main[@id='main']/section/div/div/ul/li/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,56 +24,50 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>entry-head _title</value>
+      <value>icon-copy</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Под Минском по поручению президента строят экорынок с «чистыми продуктами». Чем там будут торговать</value>
+      <value>Buy</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content-band&quot;)/div[@class=&quot;col-c&quot;]/div[@class=&quot;col-i&quot;]/div[@class=&quot;col-w&quot;]/div[@class=&quot;news-section m-rubric&quot;]/div[@class=&quot;news-entry big annoticed time ni&quot;]/a[@class=&quot;entry__link&quot;]/span[@class=&quot;entry-cnt&quot;]/span[@class=&quot;entry-head _title&quot;]</value>
+      <value>id(&quot;main&quot;)/section[@class=&quot;section section-giveback promo-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;row row-logical&quot;]/ul[@class=&quot;links-stacked&quot;]/li[1]/a[@class=&quot;icon-wrapper&quot;]/span[@class=&quot;icon-copy&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='content-band']/div[2]/div/div/div[2]/div[2]/a[2]/span/span</value>
+      <value>//main[@id='main']/section/div/div/ul/li/a/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='фотофакт'])[1]/following::span[4]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='rss'])[1]/following::span[14]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$18.99/mo.'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В столице разыскивают 15-летнего подростка'])[1]/preceding::span[9]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='В Минске разыскивают несовершеннолетнего парня. Об этом сообщает сайт столичной милиции.'])[1]/preceding::span[14]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='about trade-in'])[1]/preceding::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//div[2]/div/div/div[2]/div[2]/a[2]/span/span</value>
+      <value>//div/div/ul/li/a/span</value>
    </webElementXpaths>
 </WebElementEntity>
